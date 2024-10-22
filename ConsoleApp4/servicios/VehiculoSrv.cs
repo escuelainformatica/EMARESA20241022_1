@@ -17,7 +17,7 @@ namespace ConsoleApp4.servicios
         {
             // años x precio / 10
             // operaciones con entero devuelven un entero.
-            return vehiculo.Año * vehiculo.Precio / 35; //   precio: 17142857
+            return vehiculo.Año * vehiculo.Precio / 35.0; //   precio: 17142857
             // 4 x 150000000 / 35  = 1.714.285,714285714
 
         }

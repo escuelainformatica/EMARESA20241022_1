@@ -1,6 +1,7 @@
 ﻿// Ejercicio Tienda de mascota.
 // 1) modelos: perro y gato
 // 2) servicio: PerroSrv
+using ConsoleApp4.modeloejercicio;
 using ConsoleApp4.modelos;
 using ConsoleApp4.modelosvehiculos;
 using ConsoleApp4.servicios;
@@ -41,3 +42,40 @@ var auto1 = new Auto { Patente = "aabb20", Dueño = "john", Precio = 150000000, 
 
 VehiculoSrv.Mostrar(auto1);
 Console.WriteLine("precio:"+VehiculoSrv.ObtenerPrecioSeguro(auto1));
+
+// Ejercicio en la clase
+var cliente = new ConsoleApp4.modeloejercicio.Cliente
+{
+    Nombre = "John",
+    Apellido = "Doe"
+};
+var empleado = new Empleado
+{
+    Nombre = "Anna",
+    Apellido = "Smith"
+};
+
+PersonaServicio.Mostrar(cliente);
+PersonaServicio.Mostrar(empleado);
+
+var fac = new Factura
+{
+    Numero = 1,
+    Cliente = "john",
+    Fecha = "01/01/2010",
+    Monto = 3333
+};
+var credito = new NotaCredito
+{
+    Numero = 44,
+    Cliente = "john",
+    Fecha = "01/01/2010",
+    Monto = 3333
+};
+var debito = new NotaDebito
+{
+    Numero = 44,
+    Cliente = "john",
+    Fecha = "01/01/2010",
+    Monto = 3333
+};
